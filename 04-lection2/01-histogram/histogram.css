@@ -23,22 +23,21 @@
     color: var(--black);
 }
 .histogram__title {
-    margin: 0;
+    /*margin: 0;*/
     opacity: 0.8;
 }
 .histogram__number {
-    margin: 0;
+    /*margin: 0;*/
     font-size: 20px;
     line-height: 26px;
 }
 .histogram__link {
-    margin: 0;
+    /*margin: 0;*/
     text-decoration: none;
     color: var(--primary);
 }
 .histogram__graph {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     flex-basis: 100%;
     
