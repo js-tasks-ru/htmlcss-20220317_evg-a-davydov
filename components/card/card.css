@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
+
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+}
+.card__top {
+    display: flex;
+    flex-basis: 100%;
+}
+.card__content {
+    margin: auto;
+}
+.card__bottom {
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 25px;
+    text-align: center;
+    color: var(--black);
+}
+.card__title {
+    font-weight: 500;
+    font-size: 21px;
+}
+.card__graph {
+    height: 22px;
+}

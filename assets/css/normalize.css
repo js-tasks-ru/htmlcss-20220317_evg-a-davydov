@@ -74,7 +74,6 @@ pre {
  */
 
 a {
-  margin: 0;
   background-color: transparent;
 }
 
@@ -349,6 +348,9 @@ template {
   display: none;
 }
 
-p {
+/**
+ * Reset margins.
+ */
+a, h1, h3, p {
   margin: 0;
 }
