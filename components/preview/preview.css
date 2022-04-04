@@ -9,11 +9,9 @@
 .preview__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
 }
 .preview__card {
     width: 350px;
-    height: 367px;
     padding: 31px 24px 29px;
 }
