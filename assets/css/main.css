@@ -2,6 +2,7 @@
 
 @import 'normalize.css';
 
+@import '../../03-lection1/01-button/button.css';
 @import '../../04-lection2/01-histogram/histogram.css';
 
 @import '../../components/header/header.css';
@@ -17,6 +18,7 @@
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #4263EB;
+    --dark-blue: #334D6E;
     --red: #F03D3E;
     --grey-0: #F9FAFC;
     --grey-1: #F8F9FA;
@@ -42,4 +44,3 @@ body {
 html, body {
     height: 100%;
 }
-
