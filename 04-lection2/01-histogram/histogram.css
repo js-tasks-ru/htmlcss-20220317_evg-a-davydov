@@ -45,3 +45,7 @@
     flex-grow: 1;
     background: var(--primary);
 }
+
+.histogram_preview {
+    height: 22px;
+}

@@ -2,7 +2,10 @@
 
 @import 'normalize.css';
 
+<<<<<<< HEAD
 @import '../../03-lection1/01-button/button.css';
+=======
+>>>>>>> master
 @import '../../04-lection2/01-histogram/histogram.css';
 
 @import '../../components/header/header.css';

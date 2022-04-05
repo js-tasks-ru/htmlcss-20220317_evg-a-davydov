@@ -4,8 +4,6 @@
     background: var(--white);
 }
 .header__title {
-    margin: 0;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
