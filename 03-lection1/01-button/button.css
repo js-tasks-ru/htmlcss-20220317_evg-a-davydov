@@ -50,3 +50,7 @@
 .button_alternate:hover {
     border-color: var(--black);
 }
+
+.button_modal {
+    padding: 15px 50px;
+}
