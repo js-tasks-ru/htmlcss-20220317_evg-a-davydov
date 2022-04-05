@@ -1,4 +1,17 @@
 .preview {
-    height: 1036px;
+    padding: 68px 0 204px;
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+
     background: var(--grey-0);
+}
+
+.preview__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.preview__card {
+    width: 350px;
+    padding: 31px 24px 29px;
 }
