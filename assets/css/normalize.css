@@ -349,8 +349,11 @@ template {
 }
 
 /**
- * Reset margins.
+ * Reset.
  */
 a, h1, h3, p {
   margin: 0;
+}
+a {
+  text-decoration: none;
 }

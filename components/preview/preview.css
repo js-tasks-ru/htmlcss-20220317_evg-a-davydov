@@ -7,11 +7,15 @@
 }
 
 .preview__inner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
 }
-.preview__card {
-    width: 350px;
-    padding: 31px 24px 29px;
+
+@media (min-width: 1025px) {
+
+    .preview__inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
 }
