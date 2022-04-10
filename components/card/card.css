@@ -11,11 +11,9 @@
     display: flex;
     flex-basis: 100%;
     padding: 24px;
-    margin: 0 auto;
 }
 .card__content {
-    flex-basis: 100%;
-    margin: auto 0;
+    margin: auto;
 }
 .card__bottom {
     padding: 10px 24px;  
