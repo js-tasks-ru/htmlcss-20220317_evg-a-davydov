@@ -5,7 +5,9 @@
 
     background: var(--grey-0);
 }
-
+.preview__container {
+    padding: 0 16px;
+}
 .preview__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
