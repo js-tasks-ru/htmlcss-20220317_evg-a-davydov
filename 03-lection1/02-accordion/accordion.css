@@ -34,8 +34,8 @@
 }
 
 .accordion__arrow {
-    width: 16px;
-    height: 16px;
+    width: 23px;
+    height: 23px;
 }
 
 .accordion__item[open] .accordion__arrow {
