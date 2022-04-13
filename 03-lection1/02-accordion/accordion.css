@@ -9,7 +9,7 @@
 
 .accordion__item {
     box-sizing: border-box;
-    padding: 23px 49px 23px 32px;
+    padding: 23px 31px;
     margin-bottom: 8px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;  
@@ -20,6 +20,9 @@
 }
 
 .accordion__title {
+    display: flex;
+    justify-content: space-between;
+
     list-style: none;
     color: var(--black);
     cursor: pointer;
@@ -28,4 +31,13 @@
 .accordion__text {
     margin-block-end: 0.5em;
     color: var(--grey-4);
+}
+
+.accordion__arrow {
+    width: 23px;
+    height: 23px;
+}
+
+.accordion__item[open] .accordion__arrow {
+    transform: rotateZ(180deg);
 }

@@ -2,21 +2,25 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
         <div class="page">
             <header class="header">
-                <div class="container">
+                <div class="container header__container">
+                    <svg class="logo">
+                        <use href="../../assets/images/logo.svg#logo"></use>
+                    </svg>
                     <h1 class="header__title">
                         Reusable component library
                     </h1>
                 </div>
             </header>
             <main class="preview">
-                <div class="container">
+                <div class="container preview__container">
                     <div class="preview__inner">
-                        <section class="card preview__card">
+                        <a href="#" class="card preview__card">
                             <div class="card__top">
                                 <div class="card__content"></div>
                             </div>
@@ -25,8 +29,8 @@
                                     Tooltip
                                 </h3>
                             </div>
-                        </section>
-                        <section class="card preview__card">
+                        </a>
+                        <a href="#" class="card preview__card">
                             <div class="card__top">
                                 <div class="card__content"></div>
                             </div>
@@ -35,8 +39,8 @@
                                     Custom form elements
                                 </h3>
                             </div>
-                        </section>
-                        <section class="card preview__card">
+                        </a>
+                        <a href="#" class="card preview__card">
                             <div class="card__top">
                                 <div class="card__content"></div>
                             </div>
@@ -45,8 +49,8 @@
                                     Calendar
                                 </h3>
                             </div>
-                        </section>
-                        <section class="card preview__card">
+                        </a>
+                        <a href="#" class="card preview__card">
                             <div class="card__top">
                                 <div class="card__content"></div>
                             </div>
@@ -55,8 +59,8 @@
                                     Modal dialog
                                 </h3>
                             </div>
-                        </section>
-                        <section class="card preview__card">
+                        </a>
+                        <a href="./pages/histogram.html" class="card preview__card">
                             <div class="card__top">
                                 <div class="card__content">
                                     <section class="histogram">
@@ -68,9 +72,9 @@
                                                 50254
                                             </p>
                                         </div>
-                                        <a href="#" class="histogram__link">
+                                        <div class="histogram__link">
                                             View all
-                                        </a>
+                                        </div>
                                         <div class="histogram__graph histogram_preview">
                                             <div class="histogram__rectangle" style="height: 100%;"></div>
                                             <div class="histogram__rectangle" style="height: 70%;"></div>
@@ -111,17 +115,25 @@
                                     Histogram
                                 </h3>
                             </div>    
-                        </section>
-                        <section class="card preview__card">
-                                <div class="card__top">
-                                    <div class="card__content"></div>
+                        </a>
+                        <a href="#" class="card preview__card">
+                            <div class="card__top">
+                                <div class="card__content">
+                                    <div class="avatar">
+                                        <img 
+                                            class="avatar__img" 
+                                            src="./06-lection4/01-avatar/public/avatar-200.jpg" 
+                                            alt="avatar"
+                                        >
+                                    </div>
                                 </div>
-                                <div class="card__bottom">
-                                    <h3 class="card__title">
-                                        Avatar
-                                    </h3>
-                                </div>
-                        </section>
+                            </div>
+                            <div class="card__bottom">
+                                <h3 class="card__title">
+                                    Avatar
+                                </h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </main>

@@ -5,13 +5,19 @@
 
     background: var(--grey-0);
 }
-
-.preview__inner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+.preview__container {
+    padding: 0 16px;
 }
-.preview__card {
-    width: 350px;
-    padding: 31px 24px 29px;
+.preview__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+@media (min-width: 1025px) {
+
+    .preview__inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
 }
