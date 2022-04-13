@@ -4,8 +4,86 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            form {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+            }
+            h1 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--grey-3)
+            }
+        </style>
     </head>
     <body>
-
+        <form>
+            <h1>Checkbox</h1>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input">
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                            <use href="../../assets/images/sprites.svg#checkbox"></use>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">
+                        Default
+                    </div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" autofocus>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                            <use href="../../assets/images/sprites.svg#checkbox"></use>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">
+                        Focus
+                    </div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" checked>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                            <use href="../../assets/images/sprites.svg#checkbox"></use>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">
+                        Checked
+                    </div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" disabled>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <svg class="checkbox__icon">
+                            <use href="../../assets/images/sprites.svg#checkbox"></use>
+                        </svg>
+                    </div>
+                    <div class="checkbox__title">
+                        Disabled
+                    </div>
+                </div>
+            </label>
+        </form>
     </body>
 </html>
