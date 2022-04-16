@@ -1,0 +1,68 @@
+.input {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3)
+}
+.input__content {
+    position: relative;
+}
+.input__area {
+    height: 56px;
+    padding-left: 24px;
+    padding-right: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--grey-2);
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4);
+}
+.input__area::placeholder {
+    color: var(--grey-2);
+}
+.input__icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    right: 16px;
+    transform:translate(0, -50%);
+}
+
+/* Focus */
+.input__area:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Success */
+.input__icon_success {
+    color: var(--success);
+}
+
+/* Invalid */
+.input__area_invalid, 
+.input__area_invalid:focus {
+    border-color: var(--error);
+}
+.input__icon_invalid {
+    color: var(--error);
+}
+
+/* Disabled */
+.input__area:disabled {
+    background-color: var(--grey-2);
+}
