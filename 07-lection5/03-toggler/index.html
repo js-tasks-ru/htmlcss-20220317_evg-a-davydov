@@ -4,8 +4,72 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            form {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+                gap: 25px;
+            }
+            h1 {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: var(--grey-3)
+            }
+        </style>
     </head>
     <body>
-
+        <form>
+            <h1>
+                Toggle Button
+            </h1>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input">
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <div class="toggler__inner-control"></div>
+                    </div>
+                    <div class="toggler__title"></div>
+                </div>
+            </label>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input" autofocus>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <div class="toggler__inner-control"></div>
+                    </div>
+                    <div class="toggler__title"></div>
+                </div>
+            </label>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input" checked>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <div class="toggler__inner-control"></div>
+                    </div>
+                    <div class="toggler__title"></div>
+                </div>
+            </label>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input" disabled>
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <div class="toggler__inner-control"></div>
+                    </div>
+                    <div class="toggler__title"></div>
+                </div>
+            </label>
+        </form>
     </body>
 </html>
