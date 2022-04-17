@@ -1,9 +1,9 @@
-.input {
+.form-groupe {
     display: inline-flex;
     flex-direction: column;
     gap: 5px;
 }
-.input__title {
+.form-groupe__label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -13,10 +13,10 @@
     text-transform: uppercase;
     color: var(--grey-3)
 }
-.input__content {
+.form-groupe__content {
     position: relative;
 }
-.input__area {
+.form-groupe__input {
     height: 56px;
     padding-left: 24px;
     padding-right: 56px;
@@ -30,10 +30,11 @@
     line-height: 26px;
     color: var(--grey-4);
 }
-.input__area::placeholder {
+.form-groupe__input::placeholder {
     color: var(--grey-2);
 }
-.input__icon {
+.form-groupe__icon {
+    display: none;
     position: absolute;
     width: 24px;
     height: 24px;
@@ -43,26 +44,28 @@
 }
 
 /* Focus */
-.input__area:focus {
+.form-groupe__input:focus {
     outline: none;
     border-color: var(--primary);
 }
 
 /* Success */
-.input_success {
+.form-groupe_success {
+    display: block;
     color: var(--success);
 }
 
 /* Invalid */
-.input_invalid, 
-.input_invalid:focus {
+.form-groupe_invalid, 
+.form-groupe_invalid:focus {
+    display: block;
     border-color: var(--error);
 }
-.input_invalid {
+.form-groupe_invalid {
     color: var(--error);
 }
 
 /* Disabled */
-.input__area:disabled {
+.form-groupe__area:disabled {
     background-color: var(--grey-2);
 }
