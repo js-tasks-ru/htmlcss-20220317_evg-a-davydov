@@ -4,8 +4,101 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            form {
+                display: grid;
+                grid-template-columns: repeat(2, 350px);
+                grid-gap: 30px;
+            }
+        </style>
     </head>
     <body>
+        <form>
 
+            <!-- Default -->
+            <div class="form-groupe">
+                <label class="form-groupe__label">
+                    Label
+                </label>
+                <div class="form-groupe__content">
+                    <input type="text" placeholder="Placeholder" class="form-groupe__input">
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Focus -->
+            <div class="form-groupe">
+                <label class="form-groupe__label">
+                    Focus
+                </label>
+                <div class="form-groupe__content">
+                    <input type="text" placeholder="Placeholder" class="form-groupe__input" value="Filled Input" autofocus>
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Success -->
+            <div class="form-groupe">
+                <label class="form-groupe__label">
+                    Success
+                </label>
+                <div class="form-groupe__content">
+                    <input type="text" placeholder="Placeholder" class="form-groupe__input" value="Success">
+                    <svg class="form-groupe__icon form-groupe_success">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Error -->
+            <div class="form-groupe">
+                <label class="form-groupe__label">
+                    Error
+                </label>
+                <div class="form-groupe__content">
+                    <input type="text" placeholder="Placeholder" class="form-groupe__input form-groupe_invalid" value="Error">
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-groupe__icon form-groupe_invalid">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Disabled -->
+            <div class="form-groupe">
+                <label class="form-groupe__label">
+                    Disabled
+                </label>
+                <div class="form-groupe__content">
+                    <input type="text" placeholder="Placeholder" class="form-groupe__input" disabled>
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-success"></use>
+                    </svg>
+                    <svg class="form-groupe__icon">
+                        <use href="../../assets/images/sprites.svg#input-invalid"></use>
+                    </svg>
+                </div> 
+            </div>   
+        </form>
     </body>
 </html>
