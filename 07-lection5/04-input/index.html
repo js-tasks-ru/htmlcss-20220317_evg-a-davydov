@@ -10,11 +10,6 @@
                 align-items: center;
                 justify-content: center;
             }
-            form {
-                display: grid;
-                grid-template-columns: repeat(2, 350px);
-                grid-gap: 30px;
-            }
         </style>
     </head>
     <body>
@@ -27,42 +22,38 @@
                 <div class="input__content">
                     <input type="text" placeholder="Placeholder" class="input__area">
                 </div>
-            </label>
+
             <!-- Focus -->
-            <label class="input">
                 <div class="input__title">
                     Focus
                 </div>
                 <div class="input__content">
                     <input type="text" placeholder="Placeholder" class="input__area" value="Filled Input" autofocus>
                 </div>
-            </label>
+
             <!-- Success -->
-            <label class="input">
                 <div class="input__title">
                     Success
                 </div>
                 <div class="input__content">
                     <input type="text" placeholder="Placeholder" class="input__area" value="Success">
-                    <svg class="input__icon input__icon_success">
+                    <svg class="input__icon input_success">
                         <use href="../../assets/images/sprites.svg#input-success"></use>
                     </svg>
                 </div>
-            </label>
+
             <!-- Error -->
-            <label class="input">
                 <div class="input__title">
                     Error
                 </div>
                 <div class="input__content">
-                    <input type="text" placeholder="Placeholder" class="input__area input__area_invalid" value="Error">
-                    <svg class="input__icon input__icon_invalid">
+                    <input type="text" placeholder="Placeholder" class="input__area input_invalid" value="Error">
+                    <svg class="input__icon input_invalid">
                         <use href="../../assets/images/sprites.svg#input-invalid"></use>
                     </svg>
                 </div>
-            </label>
+
             <!-- Disabled -->
-            <label class="input">
                 <div class="input__title">
                     Disabled
                 </div>

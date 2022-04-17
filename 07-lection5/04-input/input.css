@@ -49,16 +49,16 @@
 }
 
 /* Success */
-.input__icon_success {
+.input_success {
     color: var(--success);
 }
 
 /* Invalid */
-.input__area_invalid, 
-.input__area_invalid:focus {
+.input_invalid, 
+.input_invalid:focus {
     border-color: var(--error);
 }
-.input__icon_invalid {
+.input_invalid {
     color: var(--error);
 }
 
