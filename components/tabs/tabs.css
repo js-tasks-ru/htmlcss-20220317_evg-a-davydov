@@ -34,20 +34,15 @@
     white-space: nowrap;
 }
 
-.tabs__label:hover {
-    color: var(--black);
-    border-bottom: 5px solid var(--black);
-}
-
-/* Label checked */
-.tabs_all:checked ~ .tabs__menu 
-.tabs_all,
-.tabs_elements:checked ~ .tabs__menu 
-.tabs_elements,
-.tabs_containers:checked ~ .tabs__menu 
-.tabs_containers,
-.tabs_templates:checked ~ .tabs__menu 
-.tabs_templates {
+.tabs__label:hover,
+.tabs__input_all:checked ~ .tabs__menu 
+.tabs__label_all,
+.tabs__input_elements:checked ~ .tabs__menu 
+.tabs__label_elements,
+.tabs__input_containers:checked ~ .tabs__menu 
+.tabs__label_containers,
+.tabs__input_templates:checked ~ .tabs__menu 
+.tabs__label_templates {
     color: var(--black);
     border-bottom: 5px solid var(--black);
 }
@@ -70,39 +65,39 @@
 
 /* Show */
 /* All components */
-.tabs_all:checked ~
-.tabs_elements,
-.tabs_all:checked ~
-.tabs_containers,
-.tabs_all:checked ~
-.tabs_templates {
+.tabs__input_all:checked ~
+.tabs__content-section_elements,
+.tabs__input_all:checked ~
+.tabs__content-section_containers,
+.tabs__input_all:checked ~
+.tabs__content-section_templates {
     display: none;
 }
 /* Elements */
-.tabs_elements:checked ~
-.tabs_all,
-.tabs_elements:checked ~
-.tabs_containers,
-.tabs_elements:checked ~
-.tabs_templates {
+.tabs__input_elements:checked ~
+.tabs__content-section_all,
+.tabs__input_elements:checked ~
+.tabs__content-section_containers,
+.tabs__input_elements:checked ~
+.tabs__content-section_templates {
     display: none;
 }
 /* Containers */
-.tabs_containers:checked ~
-.tabs_all,
-.tabs_containers:checked ~
-.tabs_elements,
-.tabs_containers:checked ~
-.tabs_templates {
+.tabs__input_containers:checked ~
+.tabs__content-section_all,
+.tabs__input_containers:checked ~
+.tabs__content-section_elements,
+.tabs__input_containers:checked ~
+.tabs__content-section_templates {
     display: none;
 }
 /* Templates */
-.tabs_templates:checked ~
-.tabs_all,
-.tabs_templates:checked ~
-.tabs_elements,
-.tabs_templates:checked ~
-.tabs_containers {
+.tabs__input_templates:checked ~
+.tabs__content-section_all,
+.tabs__input_templates:checked ~
+.tabs__content-section_elements,
+.tabs__input_templates:checked ~
+.tabs__content-section_containers {
     display: none;
 }
 
