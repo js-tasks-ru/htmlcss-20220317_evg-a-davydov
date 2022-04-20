@@ -17,126 +17,138 @@
                     </h1>
                 </div>
             </header>
-            <main class="preview">
-                <div class="container preview__container">
-                    <div class="preview__inner">
-                        <a href="#" class="card preview__card">
-                            <div class="card__top">
-                                <div class="card__content"></div>
-                            </div>
-                            <div class="card__bottom">
-                                <h3 class="card__title">
-                                    Tooltip
-                                </h3>
-                            </div>
-                        </a>
-                        <a href="#" class="card preview__card">
-                            <div class="card__top">
-                                <div class="card__content"></div>
-                            </div>
-                            <div class="card__bottom">
-                                <h3 class="card__title">
-                                    Custom form elements
-                                </h3>
-                            </div>
-                        </a>
-                        <a href="#" class="card preview__card">
-                            <div class="card__top">
-                                <div class="card__content"></div>
-                            </div>
-                            <div class="card__bottom">
-                                <h3 class="card__title">
-                                    Calendar
-                                </h3>
-                            </div>
-                        </a>
-                        <a href="#" class="card preview__card">
-                            <div class="card__top">
-                                <div class="card__content"></div>
-                            </div>
-                            <div class="card__bottom">
-                                <h3 class="card__title">
-                                    Modal dialog
-                                </h3>
-                            </div>
-                        </a>
-                        <a href="./pages/histogram.html" class="card preview__card">
-                            <div class="card__top">
-                                <div class="card__content">
-                                    <section class="histogram">
-                                        <div class="histogram__text">
-                                            <p class="histogram__title">
-                                                Total orders
-                                            </p>
-                                            <p class="histogram__number">
-                                                50254
-                                            </p>
-                                        </div>
-                                        <div class="histogram__link">
-                                            View all
-                                        </div>
-                                        <div class="histogram__graph histogram_preview">
-                                            <div class="histogram__rectangle" style="height: 100%;"></div>
-                                            <div class="histogram__rectangle" style="height: 70%;"></div>
-                                            <div class="histogram__rectangle" style="height: 24%;"></div>
-                                            <div class="histogram__rectangle" style="height: 78%;"></div>
-                                            <div class="histogram__rectangle" style="height: 24%;"></div>
-                                            <div class="histogram__rectangle" style="height: 60%;"></div>
-                                            <div class="histogram__rectangle" style="height: 78%;"></div>
-                                            <div class="histogram__rectangle" style="height: 22%;"></div>
-                                            <div class="histogram__rectangle" style="height: 44%;"></div>
-                                            <div class="histogram__rectangle" style="height: 60%;"></div>
-                                            <div class="histogram__rectangle" style="height: 70%;"></div>
-                                            <div class="histogram__rectangle" style="height: 22%;"></div>
-                                            <div class="histogram__rectangle" style="height: 100%;"></div>
-                                            <div class="histogram__rectangle" style="height: 22%;"></div>
-                                            <div class="histogram__rectangle" style="height: 78%;"></div>
-                                            <div class="histogram__rectangle" style="height: 60%;"></div>
-                                            <div class="histogram__rectangle" style="height: 44%;"></div>
-                                            <div class="histogram__rectangle" style="height: 70%;"></div>
-                                            <div class="histogram__rectangle" style="height: 60%;"></div>
-                                            <div class="histogram__rectangle" style="height: 22%;"></div>
-                                            <div class="histogram__rectangle" style="height: 78%;"></div>
-                                            <div class="histogram__rectangle" style="height: 70%;"></div>
-                                            <div class="histogram__rectangle" style="height: 90%;"></div>
-                                            <div class="histogram__rectangle" style="height: 60%;"></div>
-                                            <div class="histogram__rectangle" style="height: 22%;"></div>
-                                            <div class="histogram__rectangle" style="height: 50%;"></div>
-                                            <div class="histogram__rectangle" style="height: 60%;"></div>
-                                            <div class="histogram__rectangle" style="height: 22%;"></div>
-                                            <div class="histogram__rectangle" style="height: 70%;"></div>
-                                            <div class="histogram__rectangle" style="height: 34%;"></div>
-                                        </div>
-                                    </section>
+            <div class="tabs">
+                <input type="radio" id="#all-tab" name="tab" class="tabs__input tabs_all" checked>
+                <input type="radio" id="#elements-tab" name="tab" class="tabs__input tabs_elements">
+                <input type="radio" id="#containers-tab" name="tab" class="tabs__input tabs_containers">
+                <input type="radio" id="#templates-tab" name="tab" class="tabs__input tabs_templates">
+                <nav class="container tabs__container">
+                    <label class="tabs__label tabs_all" for="#all-tab">All components</label>
+                    <label class="tabs__label tabs_elements" for="#elements-tab">Elements</label>
+                    <label class="tabs__label tabs_containers" for="#containers-tab">Containers</label>
+                    <label class="tabs__label tabs_templates" for="#templates-tab">Templates</label>
+                </nav>
+                <main class="preview">
+                    <div class="container preview__container">
+                        <div class="preview__inner">
+                            <a href="#" class="card tabs_elements">
+                                <div class="card__top">
+                                    <div class="card__content"></div>
                                 </div>
-                            </div>
-                            <div class="card__bottom">
-                                <h3 class="card__title">
-                                    Histogram
-                                </h3>
-                            </div>    
-                        </a>
-                        <a href="#" class="card preview__card">
-                            <div class="card__top">
-                                <div class="card__content">
-                                    <div class="avatar">
-                                        <img 
-                                            class="avatar__img" 
-                                            src="./06-lection4/01-avatar/public/avatar-200.jpg" 
-                                            alt="avatar"
-                                        >
+                                <div class="card__bottom">
+                                    <h3 class="card__title">
+                                        Tooltip
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="card tabs_containers">
+                                <div class="card__top">
+                                    <div class="card__content"></div>
+                                </div>
+                                <div class="card__bottom">
+                                    <h3 class="card__title">
+                                        Custom form elements
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="card tabs_containers">
+                                <div class="card__top">
+                                    <div class="card__content"></div>
+                                </div>
+                                <div class="card__bottom">
+                                    <h3 class="card__title">
+                                        Calendar
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="card tabs_templates">
+                                <div class="card__top">
+                                    <div class="card__content"></div>
+                                </div>
+                                <div class="card__bottom">
+                                    <h3 class="card__title">
+                                        Modal dialog
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="./pages/histogram.html" class="card tabs_templates">
+                                <div class="card__top">
+                                    <div class="card__content">
+                                        <section class="histogram">
+                                            <div class="histogram__text">
+                                                <p class="histogram__title">
+                                                    Total orders
+                                                </p>
+                                                <p class="histogram__number">
+                                                    50254
+                                                </p>
+                                            </div>
+                                            <div class="histogram__link">
+                                                View all
+                                            </div>
+                                            <div class="histogram__graph histogram_preview">
+                                                <div class="histogram__rectangle" style="height: 100%;"></div>
+                                                <div class="histogram__rectangle" style="height: 70%;"></div>
+                                                <div class="histogram__rectangle" style="height: 24%;"></div>
+                                                <div class="histogram__rectangle" style="height: 78%;"></div>
+                                                <div class="histogram__rectangle" style="height: 24%;"></div>
+                                                <div class="histogram__rectangle" style="height: 60%;"></div>
+                                                <div class="histogram__rectangle" style="height: 78%;"></div>
+                                                <div class="histogram__rectangle" style="height: 22%;"></div>
+                                                <div class="histogram__rectangle" style="height: 44%;"></div>
+                                                <div class="histogram__rectangle" style="height: 60%;"></div>
+                                                <div class="histogram__rectangle" style="height: 70%;"></div>
+                                                <div class="histogram__rectangle" style="height: 22%;"></div>
+                                                <div class="histogram__rectangle" style="height: 100%;"></div>
+                                                <div class="histogram__rectangle" style="height: 22%;"></div>
+                                                <div class="histogram__rectangle" style="height: 78%;"></div>
+                                                <div class="histogram__rectangle" style="height: 60%;"></div>
+                                                <div class="histogram__rectangle" style="height: 44%;"></div>
+                                                <div class="histogram__rectangle" style="height: 70%;"></div>
+                                                <div class="histogram__rectangle" style="height: 60%;"></div>
+                                                <div class="histogram__rectangle" style="height: 22%;"></div>
+                                                <div class="histogram__rectangle" style="height: 78%;"></div>
+                                                <div class="histogram__rectangle" style="height: 70%;"></div>
+                                                <div class="histogram__rectangle" style="height: 90%;"></div>
+                                                <div class="histogram__rectangle" style="height: 60%;"></div>
+                                                <div class="histogram__rectangle" style="height: 22%;"></div>
+                                                <div class="histogram__rectangle" style="height: 50%;"></div>
+                                                <div class="histogram__rectangle" style="height: 60%;"></div>
+                                                <div class="histogram__rectangle" style="height: 22%;"></div>
+                                                <div class="histogram__rectangle" style="height: 70%;"></div>
+                                                <div class="histogram__rectangle" style="height: 34%;"></div>
+                                            </div>
+                                        </section>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card__bottom">
-                                <h3 class="card__title">
-                                    Avatar
-                                </h3>
-                            </div>
-                        </a>
+                                <div class="card__bottom">
+                                    <h3 class="card__title">
+                                        Histogram
+                                    </h3>
+                                </div>    
+                            </a>
+                            <a href="#" class="card tabs_elements">
+                                <div class="card__top">
+                                    <div class="card__content">
+                                        <div class="avatar">
+                                            <img 
+                                                class="avatar__img" 
+                                                src="./06-lection4/01-avatar/public/avatar-200.jpg" 
+                                                alt="avatar"
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__bottom">
+                                    <h3 class="card__title">
+                                        Avatar
+                                    </h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
             <footer class="footer">
                 <div class="container">
                     <h2 class="footer__title">

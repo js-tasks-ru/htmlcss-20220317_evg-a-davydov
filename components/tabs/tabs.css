@@ -1,0 +1,74 @@
+.tabs {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    white-space: nowrap;
+}
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0,0,0,0);
+}
+.tabs__container {
+    flex-direction: row;
+    gap: 40px;
+    overflow-x: auto;
+}
+/* Hide scrollbar */
+/* For Chrome, Safari and Opera */
+.tabs__container::-webkit-scrollbar {
+    display: none;
+}
+/* For IE, Edge and Firefox */
+.tabs__container {
+    scrollbar-width: none;
+}
+.tabs__label {
+    cursor: pointer;
+    padding-bottom: 8px;
+    border-bottom: 5px solid transparent;
+}
+
+.tabs__label:hover {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+/* Label checked */
+.tabs_all:checked ~ .tabs__container 
+.tabs_all,
+.tabs_elements:checked ~ .tabs__container 
+.tabs_elements,
+.tabs_containers:checked ~ .tabs__container 
+.tabs_containers,
+.tabs_templates:checked ~ .tabs__container 
+.tabs_templates {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+
+/* Show only */
+/* Elements */
+.tabs_elements:checked ~ .preview 
+.tabs_containers,
+.tabs_elements:checked ~ .preview 
+.tabs_templates {
+    display: none;
+}
+/* Containers */
+.tabs_containers:checked ~ .preview 
+.tabs_elements,
+.tabs_containers:checked ~ .preview 
+.tabs_templates {
+    display: none;
+}
+/* Templates */
+.tabs_templates:checked ~ .preview
+.tabs_elements,
+.tabs_templates:checked ~ .preview
+.tabs_containers {
+    display: none;
+}
