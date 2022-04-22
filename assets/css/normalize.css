@@ -347,13 +347,3 @@ template {
 [hidden] {
   display: none;
 }
-
-/**
- * Reset.
- */
-a, h1, h3, p {
-  margin: 0;
-}
-a {
-  text-decoration: none;
-}
