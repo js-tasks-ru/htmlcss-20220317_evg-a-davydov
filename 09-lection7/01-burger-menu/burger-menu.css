@@ -14,10 +14,8 @@
 }
 .burger-menu__content {
     max-width: 375px;
-    height: 100vh;
+    height: 100%;
     padding: 16px;
-    display: flex;
-    flex-direction: column;
     background: var(--grey-0);
 }
 .burger-menu__header {
