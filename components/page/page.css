@@ -11,7 +11,7 @@
     background: var(--grey-0);
 }
 .page__main {
-    flex: 1 0 auto;
+    flex-grow: 1;
 }
 .page__footer-main-page {
     display: none;
