@@ -1,14 +1,16 @@
 .tabs {
     position: relative;
+    background: var(--white);
 }
 .tabs__input {
     position: absolute;
-    outline: none;
-    clip: rect(0,0,0,0);
+    visibility: hidden;
 }
 .tabs__menu {
+    display: flex;
     flex-direction: row;
     gap: 40px;
+    padding: 0 16px;
     overflow-x: auto;
 }
 /* Hide scrollbar */
@@ -19,6 +21,9 @@
 /* For IE, Edge and Firefox */
 .tabs__menu {
     scrollbar-width: none;
+}
+.tabs__menu_no-padding {
+    padding: 0;
 }
 .tabs__label {
     cursor: pointer;
@@ -42,25 +47,33 @@
 .tabs__input_containers:checked ~ .tabs__menu 
 .tabs__label_containers,
 .tabs__input_templates:checked ~ .tabs__menu 
-.tabs__label_templates {
+.tabs__label_templates,
+.tabs__input_html:checked ~ .tabs__menu 
+.tabs__label_html,
+.tabs__input_css:checked ~ .tabs__menu 
+.tabs__label_css {
     color: var(--black);
     border-bottom: 5px solid var(--black);
 }
 
 .tabs__content-section {
-    padding: 68px 0 204px;
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
 
     background: var(--grey-0);
 }
-.tabs__preview {
-    padding: 0 16px;
+.tabs__code {
+    overflow: auto;
+    padding-top: 50px;
 }
-.tabs__preview-inner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
+.tabs__line {
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    transform: translateX(-50%);
+    left: 50%;
+
+    background: var(--grey-2);
 }
 
 /* Show */
@@ -100,11 +113,33 @@
 .tabs__content-section_containers {
     display: none;
 }
+/* HTML */
+.tabs__input_html:checked ~
+.tabs__code_css {
+    display: none;
+}
+/* CSS */
+.tabs__input_css:checked ~
+.tabs__code_html {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+/* Hide scrollbar */
+    /* For Chrome, Safari and Opera */
+    .tabs__code::-webkit-scrollbar {
+        display: none;
+    }
+    /* For IE, Edge and Firefox */
+    .tabs__code {
+        scrollbar-width: none;
+    }
+}
 
 @media (min-width: 1025px) {
 
-    .tabs__preview-inner {
-        grid-template-columns: repeat(3, 1fr);
+    .tabs__content-section {
+        padding: 52px 0 76px;
     }
-    
+
 }

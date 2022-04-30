@@ -1,11 +1,9 @@
 .header {
-    padding: 8px 0 40px;
-    background: var(--white);
-}
-.header__container {
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 23px;
+    padding: 16px;
 }
 .header__title {
     font-family: 'Inter';
@@ -15,14 +13,10 @@
     line-height: 38px;
     color: var(--grey-4);
 }
-.header_component-page {
-    padding: 0;
-    background: var(--grey-0);
-}
 
 @media (min-width: 1025px) {
 
-    .header__container {
+    .header {
         align-items: flex-start;
     }
     .header__title {

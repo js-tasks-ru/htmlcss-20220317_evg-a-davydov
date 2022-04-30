@@ -29,6 +29,8 @@
     font-size: 20px;
     line-height: 26px;
     color: var(--grey-4);
+
+    transition: border-color 200ms ease;
 }
 .form-groupe__input::placeholder {
     color: var(--grey-2);
