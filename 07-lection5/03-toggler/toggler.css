@@ -5,8 +5,7 @@
 }
 .toggler__input {
     position: absolute;
-    outline: none;
-    clip: rect(0, 0, 0, 0);
+    visibility: hidden;
 }
 .toggler__state {
     display: flex;
@@ -21,6 +20,9 @@
     height: 28px;
     border-radius: 16px;
     border: 1px solid var(--grey-2);
+
+    transition: background 300ms ease,
+                border-color 300ms ease;
 }
 .toggler__inner-control {
     width: 24px;
@@ -28,6 +30,8 @@
     border-radius: 50%;
     margin-left: 1px;
     background: var(--grey-2);
+
+    transition: transform 300ms ease;
 }
 .toggler__title {
     font-family: 'Inter';

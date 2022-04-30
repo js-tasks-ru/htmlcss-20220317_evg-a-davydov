@@ -1,29 +1,34 @@
-.footer {
-    display: none;
-}
-
 @media (min-width: 1025px) {
 
     .footer {
-        display: block;
-        padding: 72px 0;
-
-        font-family: 'Inter';
-        font-style: normal;
-        text-align: center;
-        color: var(--black);
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
     .footer__title {
-        margin: 0 0 32px;
-
+        font-family: 'Inter';
+        font-style: normal;
         font-weight: 500;
         font-size: 38px;
         line-height: 48px;
+        text-align: center;
+        color: var(--black);
+    }
+    .footer__title_small {
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--grey-3);
     }
     .footer__text {
+        font-family: 'Inter';
+        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+        text-align: center;
+        color: var(--black);
     }
     .footer__text_description {
         max-width: 640px;

@@ -3,3 +3,40 @@
     display: flex;
     flex-direction: column;
 }
+.page__header-main-page {
+    padding-bottom: 24px;
+    background: var(--white);
+}
+.page__header-component-page {
+    background: var(--grey-0);
+}
+.page__main {
+    flex-grow: 1;
+}
+.page__footer-main-page {
+    display: none;
+}
+.page__footer-component-page {
+    display: none;
+}
+
+@media (min-width: 1025px) {
+
+    .page {
+        background: var(--grey-0);
+    }
+    .page__header-component-page {
+        padding-bottom: 30px;
+    }
+    .page__footer-main-page {
+        display: block;
+        padding: 72px 0;
+        background: var(--white);
+    }
+    .page__footer-component-page {
+        display: block;
+        padding: 36px 0;
+        background: var(--grey-0);
+    }
+
+}

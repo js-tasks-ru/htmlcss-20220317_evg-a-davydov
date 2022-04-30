@@ -14,10 +14,16 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    white-space: nowrap;
 
     cursor: pointer;
-    transition: opacity 200ms ease-in-out,  background 200ms ease-in-out, 
-                                            border-color 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out,  
+                background 200ms ease-in-out, 
+                border-color 200ms ease-in-out,
+                transform 200ms ease-in-out;
+}
+.button:active {
+    transform: translateY(1px);
 }
 .button:disabled {
     opacity: 0.3;
@@ -49,8 +55,4 @@
 }
 .button_alternate:hover {
     border-color: var(--black);
-}
-
-.button_modal {
-    padding: 15px 50px;
 }
