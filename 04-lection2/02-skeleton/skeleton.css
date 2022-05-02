@@ -16,8 +16,7 @@
 .skeleton__icon {
     width: 64px;
     height: 64px;
-    border-radius: 32px;
-    background: var(--grey-2);
+    border-radius: 50%;
 }
 .skeleton__text {
     display: flex;
@@ -30,16 +29,32 @@
 }
 .skeleton__string {
     height: 20px;
-    background: linear-gradient(92.51deg, 
-                                var(--grey-2) 6.44%, 
-                                #E2E6E8 38.47%, 
-                                #F3F5F5 56.48%, 
-                                #E3E7EA 77.5%, 
-                                var(--grey-2) 102.52%);
 }
 .skeleton__string_small {
     width: 40%;
 }
 .skeleton__string_large {
     width: 60%;
+}
+.skeleton__icon,
+.skeleton__string {
+    background: linear-gradient(92.51deg, 
+                                var(--grey-2) 6.44%, 
+                                #E2E6E8 38.47%, 
+                                #F3F5F5 56.48%, 
+                                #E3E7EA 77.5%, 
+                                var(--grey-2) 102.52%);
+    background-size: 200%;
+    animation: move-background 1500ms linear;
+    animation-iteration-count: infinite;
+}
+
+/* Animations */
+@keyframes move-background {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
 }

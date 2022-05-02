@@ -2,11 +2,20 @@
 <!-- Страница с тултипом -->
 <html lang="ru">
     <head>
+        <title>Tooltip</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
+        <style>
+            body {
+                display: flex;
+            }
+            .tooltip {
+                margin: auto;
+            }
+        </style>
     </head>
-    <body style="display: flex;">
-        <div class="tooltip" style="margin: auto;">
+    <body>
+        <div class="tooltip">
             <svg class="tooltip__icon">
                 <use href="../../assets/images/sprites.svg#help"></use>
             </svg>

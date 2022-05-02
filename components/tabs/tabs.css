@@ -27,8 +27,6 @@
 }
 .tabs__label {
     cursor: pointer;
-    padding-bottom: 8px;
-    border-bottom: 5px solid transparent;
 
     font-family: 'Inter';
     font-style: normal;
@@ -37,6 +35,20 @@
     line-height: 24px;
     color: var(--grey-3);
     white-space: nowrap;
+}
+.tabs__label::after,
+.tabs__label_all::after,
+.tabs__label_elements::after,
+.tabs__label_containers::after,
+.tabs__label_templates::after,
+.tabs__label_html::after,
+.tabs__label_css::after {
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: 8px;
+    background: var(--black);
+    transform: scaleX(0);
 }
 
 .tabs__label:hover,
@@ -53,7 +65,22 @@
 .tabs__input_css:checked ~ .tabs__menu 
 .tabs__label_css {
     color: var(--black);
-    border-bottom: 5px solid var(--black);
+}
+.tabs__label:hover::after,
+.tabs__input_all:checked ~ .tabs__menu 
+.tabs__label_all::after,
+.tabs__input_elements:checked ~ .tabs__menu 
+.tabs__label_elements::after,
+.tabs__input_containers:checked ~ .tabs__menu 
+.tabs__label_containers::after,
+.tabs__input_templates:checked ~ .tabs__menu 
+.tabs__label_templates::after,
+.tabs__input_html:checked ~ .tabs__menu 
+.tabs__label_html::after,
+.tabs__input_css:checked ~ .tabs__menu 
+.tabs__label_css::after {
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
 }
 
 .tabs__content-section {
