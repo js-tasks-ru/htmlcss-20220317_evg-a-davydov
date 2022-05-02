@@ -45,7 +45,7 @@
                                 #E3E7EA 77.5%, 
                                 var(--grey-2) 102.52%);
     background-size: 200%;
-    animation: move-background 1500ms linear;
+    animation: move-background 1.5s linear;
     animation-iteration-count: infinite;
 }
 
