@@ -97,6 +97,7 @@
         display: block;
         height: 100%;
         animation: show-content 600ms ease-in-out;
+        animation-fill-mode: forwards;
     }
     .preview__checkbox:checked ~ .preview__content ~ .preview__button {
         animation: button-move 600ms ease-in-out;
@@ -117,9 +118,13 @@
     65% {
         opacity: 1;
     }
+    99% {
+        z-index: -1;
+    }
     100% {
         transform: translateY(0);
         opacity: 1;
+        z-index: 0;
     }
 }
 
