@@ -119,13 +119,9 @@
     65% {
         opacity: 1;
     }
-    /* 99% {
-        z-index: 0;
-    } */
     100% {
         transform: translateY(0);
         opacity: 1;
-        /* z-index: 0; */
     }
 }
 
