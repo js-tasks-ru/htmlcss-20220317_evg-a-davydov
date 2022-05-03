@@ -65,13 +65,14 @@
 @media (min-width: 1025px) {
 
     .preview__inner {
+        position: relative;
+        z-index: 1;
         grid-template-columns: repeat(3, 1fr);
     }
     .preview__content {
         height: 0;
         transform-origin: top;
         position: relative;
-        z-index: -1;
     }
     .preview__title {
         font-size: 28px;
@@ -118,13 +119,13 @@
     65% {
         opacity: 1;
     }
-    99% {
-        z-index: -1;
-    }
+    /* 99% {
+        z-index: 0;
+    } */
     100% {
         transform: translateY(0);
         opacity: 1;
-        z-index: 0;
+        /* z-index: 0; */
     }
 }
 
