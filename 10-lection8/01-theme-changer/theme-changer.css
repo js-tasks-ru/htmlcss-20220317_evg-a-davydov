@@ -1,0 +1,14 @@
+.theme-changer {
+    display: inline-flex;
+    gap: 12px;
+}
+.theme-changer__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-3);
+}
+.theme-changer__icon_light-theme {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-4);
+}
