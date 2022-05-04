@@ -13,7 +13,7 @@
     margin-bottom: 8px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
-    background: var(--white);  
+    background: var(--white);
 }
 
 .accordion__item:last-child {
@@ -39,6 +39,13 @@
     height: 23px;
 }
 
-.accordion__item[open] .accordion__arrow {
-    transform: rotateZ(180deg);
-}
+:not(.accordion__item[open]) 
+    .accordion__arrow {
+        transform: rotateZ(0deg);
+        transition: transform 250ms ease-in-out;
+    }
+.accordion__item[open] 
+    .accordion__arrow {
+        transform: rotateZ(180deg);
+        transition: transform 250ms ease-in-out;
+    }

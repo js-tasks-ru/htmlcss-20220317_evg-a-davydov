@@ -5,7 +5,8 @@
 }
 .radio__input {
     position: absolute;
-    visibility: hidden;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
 }
 .radio__state {
     display: flex;
@@ -21,13 +22,17 @@
     height: 28px;
     border: 1px solid var(--grey-2);
     border-radius: 50%;
+
+    transition: border 200ms ease-in-out;
 }
 .radio__circle {
-    display: none;
+    transform: scale(0);
     width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: var(--primary);
+
+    transition: transform 200ms ease-in-out;
 }
 .radio__title {
     font-family: 'Inter';
@@ -45,7 +50,7 @@
 }
 .radio__input:checked ~ .radio__state 
 .radio__circle {
-    display: block;
+    transform: scale(1);
 }
 
 /* Focus */

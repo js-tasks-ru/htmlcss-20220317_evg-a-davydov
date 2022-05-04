@@ -52,10 +52,6 @@
     --secondary-hovered: #5028C6;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
 html, body {
     height: 100%;
 }

@@ -40,19 +40,41 @@
     line-height: 24px;
     color: var(--primary);
 }
-.histogram__graph {
+.histogram__bars {
     display: flex;
     align-items: flex-end;
     flex-basis: 100%;
     
     height: 50px;
     gap: 1px;
+
+    animation: bars-increase 600ms;
 }
-.histogram__rectangle {
+.histogram__bar {
     flex-grow: 1;
     background: var(--primary);
 }
 
-.histogram_preview {
-    height: 22px;
+/* Animation */
+@keyframes bars-increase {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    15% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+    35% {
+        transform: scaleY(1.6);
+        transform-origin: bottom;
+    }
+    75% {
+        transform: scaleY(0.6);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
 }

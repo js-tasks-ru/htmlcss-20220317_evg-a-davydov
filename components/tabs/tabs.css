@@ -4,7 +4,8 @@
 }
 .tabs__input {
     position: absolute;
-    visibility: hidden;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
 }
 .tabs__menu {
     display: flex;
@@ -27,8 +28,6 @@
 }
 .tabs__label {
     cursor: pointer;
-    padding-bottom: 8px;
-    border-bottom: 5px solid transparent;
 
     font-family: 'Inter';
     font-style: normal;
@@ -37,6 +36,23 @@
     line-height: 24px;
     color: var(--grey-3);
     white-space: nowrap;
+}
+.tabs__label::after,
+.tabs__label_all::after,
+.tabs__label_elements::after,
+.tabs__label_containers::after,
+.tabs__label_templates::after,
+.tabs__label_html::after,
+.tabs__label_css::after {
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: 8px;
+    background: var(--black);
+    transform: scaleX(0);
+}
+.tabs__label:hover {
+    transition: color 250ms ease-in-out;
 }
 
 .tabs__label:hover,
@@ -53,18 +69,38 @@
 .tabs__input_css:checked ~ .tabs__menu 
 .tabs__label_css {
     color: var(--black);
-    border-bottom: 5px solid var(--black);
 }
-
+.tabs__label:hover::after,
+.tabs__input_all:checked ~ .tabs__menu 
+.tabs__label_all::after,
+.tabs__input_elements:checked ~ .tabs__menu 
+.tabs__label_elements::after,
+.tabs__input_containers:checked ~ .tabs__menu 
+.tabs__label_containers::after,
+.tabs__input_templates:checked ~ .tabs__menu 
+.tabs__label_templates::after,
+.tabs__input_html:checked ~ .tabs__menu 
+.tabs__label_html::after,
+.tabs__input_css:checked ~ .tabs__menu 
+.tabs__label_css::after {
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+}
 .tabs__content-section {
+    width: 100%;
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
 
     background: var(--grey-0);
+
+    animation: switch-tab 200ms ease-in-out;
 }
 .tabs__code {
+    width: 100%;
     overflow: auto;
     padding-top: 50px;
+
+    animation: switch-tab 200ms ease-in-out;
 }
 .tabs__line {
     position: absolute;
@@ -112,7 +148,7 @@
 .tabs__input_templates:checked ~
 .tabs__content-section_containers {
     display: none;
-}
+} 
 /* HTML */
 .tabs__input_html:checked ~
 .tabs__code_css {
@@ -142,4 +178,14 @@
         padding: 52px 0 76px;
     }
 
+}
+
+/* Animation */
+@keyframes switch-tab {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
